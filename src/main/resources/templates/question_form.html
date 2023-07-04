@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form th:object="${questionForm}" th:action="@{|/question/create|}" method="post">
+    <input type="text" th:filed="subject">
+    <textarea name="content" id="content" rows="15" th:filed="content"></textarea>
+    <input type="submit" value="답변등록">
+</form>
+
+</body>
+</html>
